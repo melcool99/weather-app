@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="searchBar" class="searchBar">
+        <form id="searchBar-form" class="searchBar-form" role="search">
+          <label for="searchBar-text"></label>
+          <input
+            id="searchBar-text"
+            class="searchBar-text"
+            type="text"
+            role="searchbox"
+            size="40"
+            autocomplete="off"
+            placeholder="City, State, Country"
+          />
+          <button
+            id="searchBar-button"
+            class="searchBar-button"
+            title="Submit Location"
+            aria-label="City, State and Country for weather conditions"
+          >
+            <i class="fas fa-search"></i>
+            <!-- <i class="fas fa-sync  none"></i> -->
+          </button>
+        </form>
+      </section>
+      <section id="currentWeather" class="currentWeather" role="region">
+          <h2 id="currentWeather-location" class="currentWeather-location">
+            Bucharest
+          </h2>
+          <div class="main-info">
+            <h2 class="temp">25°</h2>
+            <img class="icon" src="http://openweathermap.org/img/wn/10d@2x.png">
+            <div class="temp-info">
+              <div class="high-temp">high 27°</div>
+              <div class="low-temp">low 12°</div>
+            </div>
+            
+          </div>
+        <div id="currentWeather-conditions" class="currentWeather-conditions">
+          <div class="conditions">Cloudy</div>
+          <div class="feels-like">Feels Like: 25°</div>
+          <div class="humidity">Humidity:70%</div>
+          <div class="wind-speed">Wind: 3km/h</div>
+        </div>
+      </section>
+      <section id='dailyForecast'>
+        <div id="dailyForecast-content" class="dailyForecast-content">
+          <div class="forecastDay">
+            <div>Mon</div>
+            <div>ht</div>
+            <div>lt</div>
+          </div>
+          <div class="forecastDay">
+            <div>Tue</div>
+            <div>ht</div>
+            <div>lt</div>
+          </div>
+          <div class="forecastDay">
+            <div>Wed</div>
+            <div>ht</div>
+            <div>lt</div>
+          </div>
+          <div class="forecastDay">
+            <div>Thu</div>
+            <div>ht</div>
+            <div>lt</div>
+          </div>
+          <div class="forecastDay">
+            <div>Fri</div>
+            <div>ht</div>
+            <div>lt</div>
+          </div>
+          <div class="forecastDay">
+            <div>Sat</div>
+            <div>ht</div>
+            <div>lt</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
