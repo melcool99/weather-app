@@ -10,12 +10,18 @@ if (!navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
 }
 
-function getInput (event) {
+
+function getInput(event) {
   event.preventDefault();
-  if (event.type == "click" || event.type =="Enter") {
+  if (event.type == "click" || event.type == "Enter") {
+    // check for bad input
+    const letterNumber = /\d/;
+    if (searchField.value.match(letterNumber) || searchField.value.trim().length === 0){alert("Please provide a location")}
     inputLocationWeather(searchField.value);
   }
-};
+  // clear search field
+  searchField.value = "";
+}
 
 searchBar.addEventListener("click", getInput);
-searchBar.addEventListener("keypress", getInput)
+searchBar.addEventListener("keypress", getInput);

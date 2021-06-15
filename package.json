@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
-    "netlify-cli": "^3.37.17",
+    "netlify-cli": "^3.37.31",
     "node-fetch": "^2.6.1"
   }
 }

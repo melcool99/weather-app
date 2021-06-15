@@ -1,4 +1,3 @@
-import { inputLocationWeather } from "./inputLocationWeather.js";
 import { displayWeather } from "./displayWeather.js";
 
 export const geoSuccess = async (position) => {
