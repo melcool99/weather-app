@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
     "dotenv": "^10.0.0",
     "netlify-cli": "^3.37.17",
     "node-fetch": "^2.6.1"
