@@ -18,6 +18,7 @@ body {
   padding: 0.5rem;
   font-weight: bold;
 }
+
 main {
   display: flex;
   touch-action: none;
@@ -25,11 +26,32 @@ main {
   justify-content: center;
   align-items: center;
   max-width: 760px;
-  height: 80vh;
+  height: 70vh;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 2px 2px 10px #363b3a;
   padding: 20px;
+}
+
+.zero-vis {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .searchBar {
@@ -49,7 +71,7 @@ main {
   border: none;
   outline: none;
   background-color: rgb(255, 243, 176, 0);
-  width: calc(100% - 1rem);
+  width: calc(100% - 2rem);
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -94,6 +116,7 @@ main {
 
 .main-info {
   display: flex;
+  flex-grow: 1;
   width: 90%;
   justify-content: space-between;
   align-items: center;

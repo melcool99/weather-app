@@ -7,7 +7,10 @@ export const inputLocationWeather = async (location) => {
     );
     const data = await response.json();
     displayWeather(data);
+   
   } catch (error) {
     console.error(error.code, error.message);
+    alert('Please input a valid location');
   }
 };
+
