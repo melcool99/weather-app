@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
-    <link
+    <link 
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       referrerpolicy="no-referrer"
@@ -18,8 +18,8 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <main class="fade-in">
+  <body >
+    <main id="main" class="fade-in">
       <section id="searchBar" class="searchBar">
         <form id="searchBar-form" class="searchBar-form" role="search">
           <label for="searchBar-text"></label>
@@ -30,7 +30,7 @@
             role="searchbox"
             size="40"
             autocomplete="off"
-            placeholder="Location..."
+            placeholder="Search..."
           />
           <button
             id="searchBar-button"
@@ -45,6 +45,9 @@
       </section>
       <section id="currentWeather" class="currentWeather" role="region">
         <h2 id="currentWeather-location" class="currentWeather-location"></h2>
+        <div class="date-container">
+          <div class="date" id="date"></div>
+        </div>
         <div class="main-info">
           <h2 class="temp"></h2>
           <img class="icon" src="" />

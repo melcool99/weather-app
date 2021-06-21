@@ -8,9 +8,10 @@ export const inputLocationWeather = async (location) => {
     const data = await response.json();
     displayWeather(data);
    
-  } catch (error) {
+  } catch (error) { 
+    const location = document.querySelector(".currentWeather-location");
+    location.textContent =`Oups..  no weather data for this location`;
     console.error(error.code, error.message);
-    alert('Please input a valid location');
   }
 };
 

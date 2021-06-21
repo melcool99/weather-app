@@ -8,8 +8,8 @@ export const geoSuccess = async (position) => {
     );
     const data = await res.json();
     displayWeather(data);
-  } catch (err) {
-    console.error(error.code, error.message);
+  } catch (error) {
+    console.error(error.code,error.message);
   }
 };
 
