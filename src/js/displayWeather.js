@@ -11,6 +11,7 @@ const dateEl = document.querySelector(".date");
 
 
 export const displayWeather = (data) => {
+  const country = data.sys.country;
   const name = data.name;
   const { temp, humidity, feels_like, temp_min, temp_max } = data.main;
   const { speed } = data.wind;
@@ -19,7 +20,7 @@ export const displayWeather = (data) => {
 
 
   temperature.textContent = `${Math.round(temp)}°`;
-  location.textContent = name;
+  location.textContent = `${name} (${country})`;
   highTemp.textContent = `high: ${Math.round(temp_max)}°`;
   lowTemp.textContent = `low: ${Math.round(temp_min)}°`;
   conditions.textContent = description;
