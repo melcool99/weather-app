@@ -144,7 +144,7 @@ main {
   .temp {
     font-size: 3.5rem;
   }
-  .main-info .temp-info {
+  .main-info, .temp-info, .currentWeather-conditions {
     font-size: 0.8rem;
   }
 }
@@ -152,7 +152,7 @@ main {
   .temp {
     font-size: 3.5rem;
   }
-  .main-info .temp-info {
+  .main-info, .temp-info, .currentWeather-conditions {
     font-size: 0.8rem;
   }
 }
