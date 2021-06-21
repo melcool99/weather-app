@@ -14,14 +14,12 @@ const initApp = () => {
 
   const getInput = function (event) {
     event.preventDefault();
-    if (event.type === "click" || event.type === "Enter") {
-      inputLocationWeather(searchField.value);
-      mainInfo.classList.remove("fade-in");
-      void mainInfo.offsetWidth;
-      mainInfo.classList.add("fade-in");
-      searchField.value = "";
-    }
-  };
+    inputLocationWeather(searchField.value);
+    mainInfo.classList.remove("fade-in");
+    void mainInfo.offsetWidth;
+    mainInfo.classList.add("fade-in");
+    searchField.value = "";
+  }
 
   searchBtn.addEventListener("click", getInput);
   searchBtn.addEventListener("keypress", getInput);
